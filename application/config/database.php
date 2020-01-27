@@ -50,7 +50,7 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'root';
-$db['default']['password'] = 'imocdbP@$$w0rd';
+$db['default']['password'] = '';
 $db['default']['database'] = 'onlinecamera_db';
 
 /*$db['default']['hostname'] = 'localhost';
