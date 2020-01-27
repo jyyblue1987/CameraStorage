@@ -171,7 +171,7 @@ class Client_camera extends Admin_Controller {
 					$videoLink = $check->url;
 				}
 				else{
-					$videoLink = 'rtsp://'.$check->ip_address.':'.$check->port.'/user='.$check->username.'&password='.$check->password.'&channel='.$check->camera_num.'&stream='.$check->stream.'.sdp';
+					$videoLink = 'rtsp://'.$check->ip_address.':'.$check->port.'/user='.$check->username.'&password='.urlencode($check->password).'&channel='.$check->camera_num.'&stream='.$check->stream.'.sdp';
 				}
 				
 					$images_folder = 'camera '.$id;

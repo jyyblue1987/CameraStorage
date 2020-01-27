@@ -112,10 +112,10 @@ class Camera extends Frontend_Controller{
 				if($check->sys_file==0){
 
 				if($check->model=='NVR'){
-					$videoLink = 'rtsp://'.$check->ip_address.':'.$check->port.'/user='.$check->username.'&password='.$check->password.'&channel='.$check->camera_num.'&stream='.$check->stream.'.sdp';
+					$videoLink = 'rtsp://'.$check->ip_address.':'.$check->port.'/user='.$check->username.'&password='.urlencode($check->password).'&channel='.$check->camera_num.'&stream='.$check->stream.'.sdp';
 				}
 				elseif($check->model=='IP Camera'){
-					$videoLink = 'rtsp://'.$check->ip_address.':'.$check->port.'/user='.$check->username.'&password='.$check->password.'&channel='.$check->camera_num.'&stream='.$check->stream.'.sdp';
+					$videoLink = 'rtsp://'.$check->ip_address.':'.$check->port.'/user='.$check->username.'&password='.urlencode($check->password).'&channel='.$check->camera_num.'&stream='.$check->stream.'.sdp';
 				}
 				elseif($check->model=='Custom RTSP Device'){
 					$videoLink = $check->url;

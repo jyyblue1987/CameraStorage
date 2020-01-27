@@ -244,10 +244,10 @@ class Ajax_camera extends CI_Controller {
 					//echo 'YES';
 					if($check->model=='Custom RTSP Device'){
 						$videoLink = $check->url;
-						//$videoLink = 'rtsp://'.$check->ip_address.':'.$check->port.'/user='.$check->username.'&password='.$check->password.'&channel='.$check->camera_num.'&stream='.$check->stream.'.sdp';
+						//$videoLink = 'rtsp://'.$check->ip_address.':'.$check->port.'/user='.$check->username.'&password='.urlencode($check->password).'&channel='.$check->camera_num.'&stream='.$check->stream.'.sdp';
 					}
 					else{
-						$videoLink = 'rtsp://'.$check->ip_address.':'.$check->port.'/user='.$check->username.'&password='.$check->password.'&channel='.$check->camera_num.'&stream='.$check->stream.'.sdp';
+						$videoLink = 'rtsp://'.$check->ip_address.':'.$check->port.'/user='.$check->username.'&password='.urlencode($check->password).'&channel='.$check->camera_num.'&stream='.$check->stream.'.sdp';
 					}
 				
 					$images_folder = 'camera '.$id;
