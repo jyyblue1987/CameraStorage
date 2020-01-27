@@ -35,11 +35,11 @@ class Camera extends Frontend_Controller{
         $this->data['title'] = $this->data['name'].' | '.$this->data['settings']['site_name'];
 		//$this->data['table'] = true;
 
-		$this->data['all_data'] = $this->comman_model->get_by($this->_table_names,array('user_id'=>$this->data['user_details']->id,'model !='=>'Custom RTSP Device',),false,false,false);
+		$this->data['all_data'] = $this->comman_model->get_by($this->_table_names,array('user_id'=>$this->data['user_details']->id),false,false,false);
 		//$this->data['all_data2'] = $this->comman_model->get_by($this->_table_names,array('user_id'=>$this->data['user_details']->id,'model'=>'IP Camera','payment_id !='=>0),false,false,false);
 		$this->data['all_data3'] = $this->comman_model->get_by($this->_table_names,array('user_id'=>$this->data['user_details']->id,'model'=>'Custom RTSP Device'),false,false,false);
 		
-		$this->data['all_c_data'] = count($this->comman_model->get_by($this->_table_names,array('user_id'=>$this->data['user_details']->id,'payment_id !='=>0,'model !='=>'Custom RTSP Device','sys_file'=>0,'is_connect'=>0),false,false,false));
+		$this->data['all_c_data'] = count($this->comman_model->get_by($this->_table_names,array('user_id'=>$this->data['user_details']->id,'payment_id !='=>0,'sys_file'=>0,'is_connect'=>0),false,false,false));
 //		$this->data['all_c_data2'] = count($this->comman_model->get_by($this->_table_names,array('user_id'=>$this->data['user_details']->id,'payment_id !='=>0,'model'=>'IP Camera','sys_file'=>0,'is_connect'=>0),false,false,false));
 		$this->data['all_c_data3'] = count($this->comman_model->get_by($this->_table_names,array('user_id'=>$this->data['user_details']->id,'payment_id !='=>0,'model'=>'Custom RTSP Device','sys_file'=>0,'is_connect'=>0),false,false,false));
 
