@@ -1,0 +1,281 @@
+
+p.validation
+{
+    display:block;
+    text-align: left;
+    padding: 10px 10px !important;
+    position: relative;
+}
+
+div.slide-box
+{
+    display:none;
+}
+
+.navbar-brand img
+{
+    border-right: 1px solid white;
+    padding-right:10px;
+    margin-right:10px;
+}
+
+.containerk .navbar-collapse
+{
+    padding-top:10px;
+}
+
+th.control
+{
+    width:60px;
+}
+
+input.btn
+{
+    vertical-align: top;
+    padding-top:6px;
+    padding-bottom:7px;
+}
+
+.form-horizontal .control-label.col-lg-2 {
+    width: 16.6667%;
+}
+
+.form-horizontal .control-label.col-lg-4 {
+    width: 33.3333%;
+}
+
+.form-horizontal .control-label.col-lg-3{
+    width: 25%;
+}
+
+label
+{
+    display: inline;
+}
+
+#mapsAddress
+{
+    height: 400px;
+}
+
+#mapsProperties
+{
+    height: 300px;
+}
+
+/* Sortable start */
+
+.placeholder {
+	outline: 1px dashed #4183C4;
+	/*-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	margin: -1px;*/
+}
+
+.mjs-nestedSortable-error {
+	background: #fbe3e4;
+	border-color: transparent;
+}
+
+ol {
+	margin: 0;
+	padding: 0;
+	padding-left: 30px;
+}
+
+ol.sortable, ol.sortable ol {
+	margin: 0 0 0 25px;
+	padding: 0;
+	list-style-type: none;
+}
+
+ol.sortable {
+	padding: 10px;
+    margin:0px;
+}
+
+.sortable li {
+	margin: 5px 0 0 0;
+	padding: 0;
+}
+
+.sortable li div  {
+	border: 1px solid #d4d4d4;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	border-color: #D4D4D4 #D4D4D4 #BCBCBC;
+	padding: 6px;
+	margin: 0;
+	cursor: move;
+	background: #f6f6f6;
+}
+
+.sortable li>div:hover
+{
+    background: white;
+}
+
+.sortable li.mjs-nestedSortable-branch div {
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #f0ece9 100%);
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#f0ece9 100%);
+
+}
+
+.sortable li.mjs-nestedSortable-leaf div {
+	background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #bcccbc 100%);
+	background: -webkit-linear-gradient(top,  #ffffff 0%,#f6f6f6 47%,#bcccbc 100%);
+
+}
+
+li.mjs-nestedSortable-collapsed.mjs-nestedSortable-hovering div {
+	border-color: #999;
+	background: #fafafa;
+}
+
+.disclose {
+	cursor: pointer;
+	width: 10px;
+	display: none;
+}
+
+.sortable li.mjs-nestedSortable-collapsed > ol {
+	display: none;
+}
+
+.sortable li.mjs-nestedSortable-branch > div > .disclose {
+	display: inline-block;
+}
+
+.sortable li.mjs-nestedSortable-collapsed > div > .disclose > span:before {
+	content: '+ ';
+}
+
+.sortable li.mjs-nestedSortable-expanded > div > .disclose > span:before {
+	content: '- ';
+}
+
+.sortable .btn-group
+{
+    padding:0px; margin:0px;
+    border:0px;
+}
+
+.sortable .btn-group, .btn-group-vertical
+{
+    display: block;
+}
+
+/* Sortable end */
+
+/* Files start */
+
+.files-list 
+{ 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%; 
+}
+.files-list li 
+{
+    margin: 3px 3px 3px 0; 
+    padding: 1px; 
+    display:block;
+    float: left; 
+    width: 164px; 
+    height: 175px;
+    border:1px solid #E5E5E5;
+    cursor: move;
+    position:relative;
+}
+
+.files-list li.nobuttons
+{
+    height: 155px;
+}
+
+.files-list li .preview
+{
+    width: 160px; 
+    height: 120px;
+    text-align:center;
+    display:block;
+    overflow: hidden;
+    padding: 2px;
+}
+
+.files-list li .filename
+{
+    text-align:center;
+    max-width:160px;
+    overflow: hidden;
+    padding: 0px 0px 2px 0px;
+}
+
+.files-list li .options-container
+{
+    text-align:center;
+}
+
+.files-list li:hover{
+    background: #F5F5F5;
+}
+
+.files-list li div.progress, .files-list li div.error
+{
+    position:absolute;
+    top:60px;
+    left:2px;
+}
+
+.fileupload-buttonbar .col-md-7
+{
+    padding-left:0px;
+}
+
+/* Files End */
+
+/* Settings */
+
+.settings-tabs
+{
+    padding-left:15px;
+    padding-right:15px;
+}
+
+.matter-settings
+{
+    
+}
+
+/* Settings End */
+
+.label
+{
+    white-space: normal;
+    line-height: 1.3;
+}
+
+/* Example script */
+.bb-alert {
+    top: 10%;
+    font-size: 1.2em;
+    margin-bottom: 0;
+    padding: 1em 1.3em;
+    position: fixed;
+    right: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+

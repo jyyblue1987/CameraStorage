@@ -1,0 +1,51 @@
+.product_list .comments_note .star_content {
+  float: left;
+}
+
+.star {
+  position: relative;
+  top: -3px;
+  float: left;
+  width: 16px;
+  overflow: hidden;
+  cursor: default;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top:3px;
+}
+.store .star {
+  margin-top:-2px;
+  font-size:20px;
+  width:19px;
+}
+
+.star {
+  display: block;
+}
+.star span {
+  display: block;
+  position: absolute;
+  text-indent: -5000px;
+}
+div.star:after {
+  content: "\f005";
+  font-family: "FontAwesome";
+  display: inline-block;
+  color: #e1e1e1;
+}
+div.star.star_on {
+  display: block;
+}
+div.star.star_on:after {
+  content: "\f005";
+  font-family: "FontAwesome";
+  display: inline-block;
+  color: #ffea00;
+}
+div.star.star_hover:after {
+  content: "\f005";
+  font-family: "FontAwesome";
+  display: inline-block;
+  color: #fff600;
+}
+

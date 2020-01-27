@@ -1,0 +1,99 @@
+.page-content #aa-menu-area{
+	background:#999;
+	top:31px;	
+}
+.page-content .aa-logo-img{
+	margin-top:-10px;
+}
+.home-section{
+	padding-top:0px;
+	margin-bottom:20px;
+}
+.logo img{
+	width:100%;height:80px
+}
+#single-page-header{
+	background-color:#ededed; 
+	background-size: cover;
+	color: #000;
+	display: inline;
+	width: 100%;
+	float:left;
+/*	margin-top:56px;  */
+}
+
+.overlay{
+  padding: 22px 0;
+  float: left;
+  width: 100%;
+}
+
+.single-page-header-left{
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+.single-page-header-left h2{
+  text-transform: uppercase;
+  color:#505050;
+}
+
+.single-page-header-left p {
+  font-size: 15px;
+}
+
+.single-page-header-right{
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+.single-page-header-right .breadcrumb {
+  background: transparent none repeat scroll 0 0;
+  border-radius: 0;
+  text-align: right;
+}
+
+.single-page-header-right .breadcrumb li a{
+  color: #666;
+}
+.single-page-header-right .breadcrumb li.active{
+  color: #505050;
+}
+
+
+
+/*custom btn color*/
+
+.btn-red {
+  color: #fff;
+  background-color: #FF871C;
+  border-color: ;
+}
+.btn-red:focus,
+.btn-red.focus {
+  color: #fff;
+  background-color: #c9302c;
+  border-color: #761c19;
+}
+.btn-red:hover {
+  color: #fff;
+  background-color: #444444;
+  border-color: #000;
+}
+
+
+/*************************
+*   pricing table		*
+************************/
+.panel-red {
+  border-color: #c9302c;
+}
+
+.panel-red > .panel-heading {
+  color: #FFF;
+  background-color: #c9302c;
+  border-color: #c9302c;
+}
+
